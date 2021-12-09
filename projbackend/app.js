@@ -15,6 +15,7 @@ import userRoutes from "./routes/user.js";
 import categoryRoutes from "./routes/category.js";
 import productRoutes from "./routes/product.js";
 import orderRoutes from "./routes/order.js";
+import paymentBRoutes from "./routes/paymentBRoutes.js";
 
 // var authRoutes = require("./routes/auth.js");
 
@@ -43,6 +44,7 @@ app.use("/api", userRoutes);
 app.use("/api", categoryRoutes);
 app.use("/api", productRoutes);
 app.use("/api", orderRoutes);
+app.use("/api", paymentBRoutes);
 
 // Port
 const port = process.env.PORT || 8000;
